@@ -23,11 +23,14 @@ throttleLog(1,3)
 import {createRoot} from 'react-dom/client'
 import React from 'react'
 import Todo from "./6_todoList/Todo";
+import ContactForm from "./7_contactForm/ContactForm";
+
 
 const root = createRoot(document.getElementById('root'))
 
 root.render(
     <>
         <Todo />
+        <ContactForm />
     </>
 )
