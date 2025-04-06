@@ -2,6 +2,7 @@
  * @param {...(any|Object|Array<any|Object|Array>)} args
  * @return {string}
  */
+
 export default function classNames(...args) {
     const resultArray = [...args];
     // reduce array value
