@@ -27,6 +27,7 @@ import ContactForm from "./7_contactForm/ContactForm";
 import HolyGrail from "./8_holyGrail/HolyGrail";
 import Tabs from "./9_tabs/Tabs";
 import JobBoard from "./10_jobBoard/JobBoard";
+import Accordion from './11_accordion/Accordion';
 
 
 const root = createRoot(document.getElementById('root'))
@@ -37,6 +38,7 @@ root.render(
         {/* <ContactForm /> */}
         {/* <HolyGrail /> */}
         {/* <Tabs /> */}
-        <JobBoard />
+        {/* <JobBoard /> */}
+        <Accordion />
     </>
 )
