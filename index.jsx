@@ -26,6 +26,7 @@ import Todo from "./6_todoList/Todo";
 import ContactForm from "./7_contactForm/ContactForm";
 import HolyGrail from "./8_holyGrail/HolyGrail";
 import Tabs from "./9_tabs/Tabs";
+import JobBoard from "./10_jobBoard/JobBoard";
 
 
 const root = createRoot(document.getElementById('root'))
@@ -35,6 +36,7 @@ root.render(
         {/* <Todo /> */}
         {/* <ContactForm /> */}
         {/* <HolyGrail /> */}
-        <Tabs />
+        {/* <Tabs /> */}
+        <JobBoard />
     </>
 )
