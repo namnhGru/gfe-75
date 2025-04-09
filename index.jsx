@@ -19,6 +19,13 @@
 // const throttleLog = throttle((a,b) => console.log(a+b), 10)
 // throttleLog(1,3)
 
+import EventEmitter from "./18_eventEmitter";
+
+const eventEmitter = new EventEmitter()
+eventEmitter.on("event", (a, b) => console.log(a, b)).on("event", (a, b) => console.log(a, b))
+const newEv = eventEmitter.off("event", (a, b) => console.log(a, b))
+
+console.log(newEv)
 
 import {createRoot} from 'react-dom/client'
 import React from 'react'
