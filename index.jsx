@@ -19,13 +19,32 @@
 // const throttleLog = throttle((a,b) => console.log(a+b), 10)
 // throttleLog(1,3)
 
-import EventEmitter from "./18_eventEmitter";
+// import EventEmitter from "./18_eventEmitter";
+// const eventEmitter = new EventEmitter()
+// eventEmitter.on("event", (a, b) => console.log(a, b)).on("event", (a, b) => console.log(a, b))
+// const newEv = eventEmitter.off("event", (a, b) => console.log(a, b))
+// console.log(newEv)
 
-const eventEmitter = new EventEmitter()
-eventEmitter.on("event", (a, b) => console.log(a, b)).on("event", (a, b) => console.log(a, b))
-const newEv = eventEmitter.off("event", (a, b) => console.log(a, b))
+import getElementsByStyle from './19_getElementByStyle';
 
-console.log(newEv)
+function createElementFromHtmlString(htmlString) {
+  // Use `document.createElement()` because jsdom@16 has some issues with `getComputedStyle()`
+  // with elements created using `DOMParser().parseFromString()`.
+  const div = document.createElement('div');
+  div.innerHTML = htmlString.trim(); // Trimming to avoid any leading whitespace nodes.
+  return div;
+}
+
+const doc = createElementFromHtmlString(
+    `<div>
+          <span style="font-size: 12px">Span</span>
+          <p>Paragraph</p>
+          <div></div>
+        </div>`
+  );
+
+  getElementsByStyle(doc, 'font-size', '12px');
+
 
 import {createRoot} from 'react-dom/client'
 import React from 'react'
@@ -46,6 +65,6 @@ root.render(
         {/* <HolyGrail /> */}
         {/* <Tabs /> */}
         {/* <JobBoard /> */}
-        <Accordion />
+        {/* <Accordion /> */}
     </>
 )
