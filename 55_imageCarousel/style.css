@@ -1,0 +1,62 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: none;
+    margin: none;
+  }
+  
+  .carousel-gallery {
+    position: relative;
+  }
+  
+  .carousel-pagination {
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    border-radius: 12px;
+    padding: 6px 12px;
+    gap: 4px;
+  }
+  
+  .carousel-page {
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: gainsboro;
+  }
+  .carousel-page:hover {
+    background-color: whitesmoke;
+  }
+  
+  .carousel-back-btn {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 50%;
+    left: 1%;
+  }
+  
+  .carousel-fwd-btn {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    bottom: 50%;
+    right: 1%;
+  }
+  
+  .carousel-back-btn:hover,
+  .carousel-fwd-btn:hover {
+    background-color: grey;
+    color: black;
+  }
+  
